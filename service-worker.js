@@ -1,4 +1,4 @@
-const CACHE = 'eiken-vocab-v1';
+const CACHE = 'eiken-vocab-v2';
 const FILES = ['./', 'index.html', 'style.css', 'app.js', 'manifest.json', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', e => {

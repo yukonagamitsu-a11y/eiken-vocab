@@ -1,7 +1,7 @@
 {
-  "name": "英検準1級 単語アプリ",
-  "short_name": "英検単語",
-  "description": "英検準1級の単語をゲーム感覚で覚えよう",
+  "name": "たんごクエスト",
+  "short_name": "たんごクエスト",
+  "description": "英単語をゲーム感覚で覚えよう",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

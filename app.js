@@ -1,5 +1,5 @@
 'use strict';
-/* 英検準1級 単語アプリ */
+/* たんごクエスト */
 const KEY = 'eiken-vocab-v1';
 const API = 'https://api.dictionaryapi.dev/api/v2/entries/en/';
 const $ = s => document.querySelector(s);
@@ -111,7 +111,7 @@ function renderHome(v) {
   const lv = level(S.points), prog = S.points % 100;
   const mastered = S.words.filter(w => wordStatus(w) === 'master').length;
   v.innerHTML = `
-  <h2>📚 英検準1級 単語</h2>
+  <h2>📚 たんごクエスト</h2>
   <div class="hero"><div class="lv">レベル</div><div class="big">Lv.${lv}</div>
     <div class="bar"><i style="width:${prog}%"></i></div>
     <div class="lv" style="margin-top:6px">次のレベルまで ${100 - prog} pt</div></div>
@@ -441,7 +441,7 @@ function renderSettings(v) {
     <button class="btn ghost" data-act="import">📥 データを読み込む</button>
     <input type="file" id="impFile" accept=".json,application/json" hidden></div>
   <div class="card"><button class="btn danger" data-act="reset">🗑 全データを削除</button></div>
-  <p class="center muted">英検準1級 単語アプリ</p>`;
+  <p class="center muted">たんごクエスト</p>`;
 }
 async function doExport() {
   const json = JSON.stringify(S, null, 2), name = `eiken-vocab-${today()}.json`;
