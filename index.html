@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#6c5ce7">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="英検単語">
+<title>英検準1級 単語アプリ</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="view"></main>
+<nav id="tabbar">
+  <button data-act="go" data-tab="home"><span>🏠</span>ホーム</button>
+  <button data-act="go" data-tab="register"><span>✏️</span>登録</button>
+  <button data-act="go" data-tab="book"><span>📖</span>単語帳</button>
+  <button data-act="go" data-tab="game"><span>🎮</span>ゲーム</button>
+  <button data-act="go" data-tab="settings"><span>⚙️</span>設定</button>
+</nav>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
